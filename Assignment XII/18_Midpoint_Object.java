@@ -21,44 +21,50 @@ import java.util.*;
 class Point
 {
     int x,y;
+
     Point()
     {
         x = 0;
         y = 0;
     }
-    void readpoint()
+
+    void readpoint(Scanner input)
     {
-        try(Scanner input = new Scanner (System.in);)
-        {
-            System.out.print("x : ");
-            x = input.nextInt();
-            System.out.print("y : ");
-            y = input.nextInt();
-        }
+        System.out.print("x : ");
+        x = input.nextInt();
+        System.out.print("y : ");
+        y = input.nextInt();
     }
+
     Point midpoint(Point A, Point B)
     {
         Point answer=new Point();
         answer.x = (A.x + B.x)/2;
         answer.y = (A.y + B.y)/2;
-        return(answer);
+        return answer;
     }
+
     void displaypoint()
     {
-        System.out.print("x : "+ x);
-        System.out.print("y : "+ y);
+        System.out.println("x : "+ x);
+        System.out.println("y : "+ y);
     }
+
     public static void main(String Args[])
     {
         Point Point_A = new Point();
         Point Point_B = new Point();
         Point Midpoint = new Point();
+        Scanner input = new Scanner(System.in);
+
         System.out.println("For point A");
-        Point_A.readpoint();
+        Point_A.readpoint(input);
+
         System.out.println("For point B");
-        Point_B.readpoint();
+        Point_B.readpoint(input);
+
         System.out.println("Midpoint of the two points.");
-        Midpoint.midpoint(Point_A, Point_B);
+        Midpoint = Midpoint.midpoint(Point_A, Point_B);
         Midpoint.displaypoint();
     }
 }
