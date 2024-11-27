@@ -1,6 +1,6 @@
 // Write a program to input 10 numbers in a single dimensional array. Input a number and using Binary Search Technique check whether the number is present in the array or not.
-import java.util.*;
 
+import java.util.*;
 class Binary_Search 
 {
     public static void main(String Args[]) 
@@ -24,7 +24,7 @@ class Binary_Search
                 int mid = (low+high) / 2;
                 if (array[mid] == search) 
                 {
-                    System.out.println("The element is present at index " + mid);
+                    System.out.println("Present at index " + mid);
                     isPresent=true;
                     break;
                 } 
@@ -39,7 +39,7 @@ class Binary_Search
             }
             if(!isPresent)
             {
-                System.out.println("The element is not present in the array.");
+                System.out.println("Not present in the array.");
             }
         }
     }

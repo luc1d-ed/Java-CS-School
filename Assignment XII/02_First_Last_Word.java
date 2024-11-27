@@ -1,5 +1,5 @@
 /* Write a program to input the sentence and reprint it after exchanging the first and last words of the sentence.
-   Example: Hello how are you
+   Input: Hello how are you
    Output:  you how are Hello
 */
 

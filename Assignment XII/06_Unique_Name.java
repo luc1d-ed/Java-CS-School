@@ -1,6 +1,8 @@
 /* Write a program to input a name and check whether it is a unique name or not
- * (A name is said to be unique in which the letters do not repeat)
+   (A name is said to be unique in which the letters do not repeat)
+   Example: Mavis, Sage, Raven
  */
+
 import java.util.*;
 class Unique_Name 
 {

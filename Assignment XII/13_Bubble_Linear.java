@@ -1,12 +1,12 @@
 /* Write a program to input 10 numbers in a Single Dimensional Array.
- * Using Bubble Sort technique arrange the array in ascending order and display the sorted array.
- * Input a number and using linear search check whether the element is present in the array or not.
- * Use the following methods:
- * (i) void input()
- * (ii) void sort()
- * (iii) void search()
- * (iv) void display()
- * Create a main method and create the object of the class and call other functions.
+   Using Bubble Sort technique arrange the array in ascending order and display the sorted array.
+   Input a number and using linear search check whether the element is present in the array or not.
+   Use the following methods:
+     (i) void input()
+     (ii) void sort()
+     (iii) void search()
+     (iv) void display()
+   Create a main method and create the object of the class and call other functions.
  */
 
 import java.util.*;
@@ -26,7 +26,7 @@ class Bubble_Linear
                 System.out.print("Enter the "+(i+1)+" number : ");
                 number[i]=input.nextInt();
             }
-            System.out.print("Enter the number you want to search for : ");
+            System.out.print("Search for : ");
             search=input.nextInt();
         }
     }
@@ -38,11 +38,11 @@ class Bubble_Linear
         {
             for (j=0;j<9-i;j++) 
             {
-                if (number[j] < number[j + 1]) 
+                if (number[j] > number[j + 1]) 
                 {
-                    int temporary = number[j];
-                    number[j] = number[j + 1];
-                    number[j + 1] = temporary;
+                    int temporary = number[j + 1];
+                    number[j + 1] = number[j];
+                    number[j] = temporary;
                 }
             }
         }
@@ -69,11 +69,11 @@ class Bubble_Linear
         System.out.println();
         if(isPresent)
         {
-            System.out.println("The number you searched for is present in the array.");
+            System.out.println(search+" is present in the array.");
         }
         else
         {
-            System.out.println("The number you searched for is not present in the array.");
+            System.out.println(search+" is not present in the array.");
         }
     }
 

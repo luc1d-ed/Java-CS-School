@@ -1,6 +1,15 @@
 /* Using the switch statement, write a menu driven program
- * (i) To input a sentence and count the number of vowels present in it.
- * (ii) To input a word and check if it is palindrome or not.
+   (i) To input a sentence and count the number of vowels present in it.
+   (ii) To input a word and check if it is palindrome or not.
+
+   Option 1
+   Input: The Social Network is a good movie.
+   Output: 9 vowels are present in the given sentence.
+
+   Option 2
+   Input: madam
+   Output: madam is a palindrome word.
+
  */
 
 import java.util.*;
@@ -16,6 +25,7 @@ class Vowels_Palindrome
             {
                 case 1:
                     System.out.print("Enter a sentence : ");
+                    input.nextLine();
                     String sentence=input.nextLine();
                     String words[]=sentence.split(" ",0);
                     String vowels="aeiouAEIOU";

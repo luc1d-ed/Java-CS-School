@@ -2,15 +2,19 @@
  The co-ordinates of midpoint of two points P1(x1, y1)and P2(x2, y2) 
  can be calculated as P(x, y) where x = (x1 + x2)/2y = (y1 + y2)/2. 
  Design a class with the following details
+
  Class Name: Point
+
  Data members/ Instance Variables:
  x : Stores the x co-ordinates
  y : Stores the y co-ordinates
+
  Member functions
- Point() : Constructor to initialize x = 0, y = 0;
- void readPoint() : Accept the co-ordinates x and y of points
- Point midPoint(Point A, Point B) : Calculates and returns the midpoint of the two points A andB.
- void displayPoint() : Displays the co-ordinates of a point.
+    Point() : Constructor to initialize x = 0, y = 0;
+    void readPoint() : Accept the co-ordinates x and y of points
+    Point midPoint(Point A, Point B) : Calculates and returns the midpoint of the two points A andB.
+    void displayPoint() : Displays the co-ordinates of a point.
+
  Specify the class Point giving details of the constructor Point(), member functions void readPoint(),Point midPoint(Point, Point) and void displayPoint() along with the main() function to create an object and call the functions accordingly to calculate the midpoint between any two given points. */
 
 import java.util.*;

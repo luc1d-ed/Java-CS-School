@@ -1,4 +1,4 @@
-/* Write a program to input the numbers in a 4 x 4 array and display the sum of its left and right diagonals. */
+// Write a program to input the numbers in a 4 x 4 array and display the sum of its left and right diagonals. 
 
 import java.util.*;
 class Diagonal_Sum 
@@ -13,7 +13,7 @@ class Diagonal_Sum
             {
                 for (int j = 0; j < 4; j++) 
                 {
-                    System.out.print("Enter element at position [" + i + "][" + j + "]: ");
+                    System.out.print("[" + i + "][" + j + "]: ");
                     array[i][j] = input.nextInt();
                 }
             }

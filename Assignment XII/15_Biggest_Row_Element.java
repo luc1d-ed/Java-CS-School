@@ -1,4 +1,4 @@
-/* Write a program to input the numbers in a 4 x 5 array and find the biggest element in each row. */
+// Write a program to input the numbers in a 4 x 5 array and find the biggest element in each row. 
 
 import java.util.*;
 class Biggest_Row_Element
@@ -13,7 +13,7 @@ class Biggest_Row_Element
             {
                 for (int j = 0; j < 5; j++) 
                 {
-                    System.out.print("Enter element at position [" + i + "][" + j + "]: ");
+                    System.out.print("[" + i + "][" + j + "]: ");
                     array[i][j] = input.nextInt();
                 }
             }

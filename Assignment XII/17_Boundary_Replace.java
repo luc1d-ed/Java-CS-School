@@ -1,4 +1,4 @@
-/* Write a program to input numbers in a 4 x 4 array, display the array. Replace all the boundary elements with '0' and print the new array. */
+// Write a program to input numbers in a 4 x 4 array, display the array. Replace all the boundary elements with '0' and print the new array. 
 
 import java.util.*;
 class Boundary_Replace
@@ -13,7 +13,7 @@ class Boundary_Replace
             {
                 for(j=0;j<4;j++)
                 {
-                    System.out.print("Enter ["+(i)+"] ["+(j)+"] element : ");
+                    System.out.print("["+(i)+"] ["+(j)+"]: ");
                     multi_array[i][j]=input.nextInt();
                 }
             }

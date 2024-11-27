@@ -1,6 +1,7 @@
 /* Write a program to input a sentence and find the number of words which begin and end with a vowel; also print those words.
-
-
+   Input: I am an elephant and I have a big ego
+   Output: I, I, a, ego.
+   Count: 4
 */
 
 import java.util.Scanner;
@@ -21,6 +22,7 @@ class Vowel_Start_End
                 if (vowels.indexOf(word.charAt(0)) != -1 && vowels.indexOf(word.charAt(length - 1)) != -1) 
                 {
                     System.out.println(word);
+                    word_count++;
                 }
             }
             System.out.println("There are "+word_count+" word(s) present in the sentence which start and end with a vowel.");

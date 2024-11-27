@@ -1,4 +1,8 @@
-//Write a program to input a sentence and print those words which do not contain a vowel, also count those words.
+/* Write a program to input a sentence and print those words which do not contain a vowel, also count those words.
+   Input: Shy Sam ran by the cod shop.
+   Output: Shy, by
+   Count: 2
+*/
 
 import java.util.Scanner;
 class Vowel_Count
@@ -7,7 +11,7 @@ class Vowel_Count
     {
         try(Scanner input=new Scanner(System.in);)
         {
-            System.out.println("Enter a sentence.");
+            System.out.print("Enter a sentence: ");
             String sentence=input.nextLine();
             String words[]=sentence.split(" ",0);
             String vowels = "aeiouAEIOU";
